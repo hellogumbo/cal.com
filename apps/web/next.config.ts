@@ -236,7 +236,7 @@ const nextConfig = (phase: string): NextConfig => {
     experimental: {
       optimizePackageImports: ["@calcom/ui"],
     },
-    productionBrowserSourceMaps: true,
+    productionBrowserSourceMaps: false,
     transpilePackages: [
       "@calcom/app-store",
       "@calcom/dayjs",
@@ -261,7 +261,6 @@ const nextConfig = (phase: string): NextConfig => {
     images: {
       unoptimized: true,
     },
-    turbopack: {},
     async rewrites() {
       const { orgSlug } = nextJsOrgRewriteConfig;
       const beforeFiles = [

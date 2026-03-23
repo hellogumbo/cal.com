@@ -1,1 +1,1 @@
-# Cal.com for Gumbo
+Deploying cal.com for Gumbo team
